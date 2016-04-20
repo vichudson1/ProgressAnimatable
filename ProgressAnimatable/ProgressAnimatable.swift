@@ -25,7 +25,7 @@ public protocol ProgressAnimatable: class {
 	var animationDuration: Double { get }
 	
 	/**
-	Use this method to update your views progress.
+	Use this method to update your views progress. A default implementation is provided, so you only need to implement this if you want to override the default.
 	- parameter progress: The new progress value for your view.
 	- parameter animated: Determines whether the progress change should be animated. Defaults to true.
 	*/
