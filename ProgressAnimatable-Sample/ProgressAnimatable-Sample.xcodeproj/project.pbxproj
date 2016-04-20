@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		574BF1011CC1D86000867EAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF1001CC1D86000867EAE /* AppDelegate.swift */; };
+		574BF1031CC1D86000867EAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF1021CC1D86000867EAE /* ViewController.swift */; };
+		574BF1061CC1D86000867EAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574BF1041CC1D86000867EAE /* Main.storyboard */; };
+		574BF1081CC1D86000867EAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574BF1071CC1D86000867EAE /* Assets.xcassets */; };
+		574BF10B1CC1D86000867EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574BF1091CC1D86000867EAE /* LaunchScreen.storyboard */; };
+		574BF1131CC2657C00867EAE /* SampleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF1121CC2657C00867EAE /* SampleProgressView.swift */; };
+		574BF1161CC26A3300867EAE /* ProgressAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF1151CC26A3300867EAE /* ProgressAnimatable.swift */; };
+		574BF11C1CC425BA00867EAE /* SwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF11B1CC425BA00867EAE /* SwiftTimer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		574BF0FD1CC1D86000867EAE /* ProgressAnimatable-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProgressAnimatable-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		574BF1001CC1D86000867EAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		574BF1021CC1D86000867EAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		574BF1051CC1D86000867EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		574BF1071CC1D86000867EAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574BF10A1CC1D86000867EAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		574BF10C1CC1D86000867EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		574BF1121CC2657C00867EAE /* SampleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleProgressView.swift; sourceTree = "<group>"; };
+		574BF1151CC26A3300867EAE /* ProgressAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressAnimatable.swift; sourceTree = "<group>"; };
+		574BF11B1CC425BA00867EAE /* SwiftTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTimer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		574BF0FA1CC1D86000867EAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		574BF0F41CC1D86000867EAE = {
+			isa = PBXGroup;
+			children = (
+				574BF0FF1CC1D86000867EAE /* ProgressAnimatable-Sample */,
+				574BF0FE1CC1D86000867EAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		574BF0FE1CC1D86000867EAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				574BF0FD1CC1D86000867EAE /* ProgressAnimatable-Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		574BF0FF1CC1D86000867EAE /* ProgressAnimatable-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				574BF11A1CC425BA00867EAE /* Swift Timer */,
+				574BF1141CC26A3300867EAE /* ProgressAnimatable */,
+				574BF1001CC1D86000867EAE /* AppDelegate.swift */,
+				574BF1021CC1D86000867EAE /* ViewController.swift */,
+				574BF1121CC2657C00867EAE /* SampleProgressView.swift */,
+				574BF1041CC1D86000867EAE /* Main.storyboard */,
+				574BF1071CC1D86000867EAE /* Assets.xcassets */,
+				574BF1091CC1D86000867EAE /* LaunchScreen.storyboard */,
+				574BF10C1CC1D86000867EAE /* Info.plist */,
+			);
+			path = "ProgressAnimatable-Sample";
+			sourceTree = "<group>";
+		};
+		574BF1141CC26A3300867EAE /* ProgressAnimatable */ = {
+			isa = PBXGroup;
+			children = (
+				574BF1151CC26A3300867EAE /* ProgressAnimatable.swift */,
+			);
+			name = ProgressAnimatable;
+			path = ../../ProgressAnimatable;
+			sourceTree = "<group>";
+		};
+		574BF11A1CC425BA00867EAE /* Swift Timer */ = {
+			isa = PBXGroup;
+			children = (
+				574BF11B1CC425BA00867EAE /* SwiftTimer.swift */,
+			);
+			path = "Swift Timer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		574BF0FC1CC1D86000867EAE /* ProgressAnimatable-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 574BF10F1CC1D86000867EAE /* Build configuration list for PBXNativeTarget "ProgressAnimatable-Sample" */;
+			buildPhases = (
+				574BF0F91CC1D86000867EAE /* Sources */,
+				574BF0FA1CC1D86000867EAE /* Frameworks */,
+				574BF0FB1CC1D86000867EAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ProgressAnimatable-Sample";
+			productName = "ProgressAnimatable-Sample";
+			productReference = 574BF0FD1CC1D86000867EAE /* ProgressAnimatable-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		574BF0F51CC1D86000867EAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Victor Hudson";
+				TargetAttributes = {
+					574BF0FC1CC1D86000867EAE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 574BF0F81CC1D86000867EAE /* Build configuration list for PBXProject "ProgressAnimatable-Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 574BF0F41CC1D86000867EAE;
+			productRefGroup = 574BF0FE1CC1D86000867EAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				574BF0FC1CC1D86000867EAE /* ProgressAnimatable-Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		574BF0FB1CC1D86000867EAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574BF10B1CC1D86000867EAE /* LaunchScreen.storyboard in Resources */,
+				574BF1081CC1D86000867EAE /* Assets.xcassets in Resources */,
+				574BF1061CC1D86000867EAE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		574BF0F91CC1D86000867EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574BF1131CC2657C00867EAE /* SampleProgressView.swift in Sources */,
+				574BF11C1CC425BA00867EAE /* SwiftTimer.swift in Sources */,
+				574BF1031CC1D86000867EAE /* ViewController.swift in Sources */,
+				574BF1161CC26A3300867EAE /* ProgressAnimatable.swift in Sources */,
+				574BF1011CC1D86000867EAE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		574BF1041CC1D86000867EAE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574BF1051CC1D86000867EAE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		574BF1091CC1D86000867EAE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				574BF10A1CC1D86000867EAE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		574BF10D1CC1D86000867EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		574BF10E1CC1D86000867EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		574BF1101CC1D86000867EAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ProgressAnimatable-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VicHudsonSampleCode.ProgressAnimatable-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		574BF1111CC1D86000867EAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ProgressAnimatable-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.VicHudsonSampleCode.ProgressAnimatable-Sample";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		574BF0F81CC1D86000867EAE /* Build configuration list for PBXProject "ProgressAnimatable-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574BF10D1CC1D86000867EAE /* Debug */,
+				574BF10E1CC1D86000867EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		574BF10F1CC1D86000867EAE /* Build configuration list for PBXNativeTarget "ProgressAnimatable-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				574BF1101CC1D86000867EAE /* Debug */,
+				574BF1111CC1D86000867EAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 574BF0F51CC1D86000867EAE /* Project object */;
+}
