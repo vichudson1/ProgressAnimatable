@@ -61,7 +61,8 @@ private extension ProgressAnimatable where Self: UIView {
 	var animationDuration: Double { return 3.0 }
 	
 	func updateProgress() {
-		if ((!reverse && progress < targetValue) || (reverse && progress > targetValue)) {
+		if ((!reverse && progress < targetValue)
+			|| (reverse && progress > targetValue && progress + progressInterval > 0)) {
 			progress += progressInterval
 		} else {
 			timer?.invalidate()
