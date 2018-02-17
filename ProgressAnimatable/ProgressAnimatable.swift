@@ -18,7 +18,7 @@ public protocol ProgressAnimatable: class {
 	/// The variable the default implentation methods use to determine if progress will be going up or down. Initialize to `false` the default methods will update it when needed.
 	var reverse: Bool { get set }
 	
-	/// The Timer instance used by the default methods to drive the animation. You can just declare it as an optional with no initial value. The protocol methods control its creation when needed. There is a copy of SwiftTimer bundled with the sample project for convienience, you should grab the most current copy for use in your projects from [SwiftTimer](https://github.com/vichudson1/SwiftTimer).
+	/// The Timer instance used by the default methods to drive the animation. You can just declare it as an optional with no initial value. The protocol methods control its creation when needed.
 	var timer: Timer? { get set }
 	
 	/// Optional variable can be defined to set the animation duration. You can override as needed, a default of 3 seconds is used if you omit this.
