@@ -25,7 +25,7 @@ class SampleProgressView: UIView {
 	var progress: Double = 0.0
 	var targetValue: Double = 0.0
 	var reverse: Bool =  false
-	var timer: SwiftTimer?
+	var timer: Timer?
 	
 	// Optional Override, this normally defaults to 3 seconds.
 	var animationDuration = 1.5

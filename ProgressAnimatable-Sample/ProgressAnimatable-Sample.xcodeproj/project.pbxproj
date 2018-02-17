@@ -14,7 +14,6 @@
 		574BF10B1CC1D86000867EAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574BF1091CC1D86000867EAE /* LaunchScreen.storyboard */; };
 		574BF1131CC2657C00867EAE /* SampleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF1121CC2657C00867EAE /* SampleProgressView.swift */; };
 		574BF1161CC26A3300867EAE /* ProgressAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF1151CC26A3300867EAE /* ProgressAnimatable.swift */; };
-		574BF11C1CC425BA00867EAE /* SwiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574BF11B1CC425BA00867EAE /* SwiftTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		574BF10C1CC1D86000867EAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		574BF1121CC2657C00867EAE /* SampleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleProgressView.swift; sourceTree = "<group>"; };
 		574BF1151CC26A3300867EAE /* ProgressAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressAnimatable.swift; sourceTree = "<group>"; };
-		574BF11B1CC425BA00867EAE /* SwiftTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +58,6 @@
 		574BF0FF1CC1D86000867EAE /* ProgressAnimatable-Sample */ = {
 			isa = PBXGroup;
 			children = (
-				574BF11A1CC425BA00867EAE /* Swift Timer */,
 				574BF1141CC26A3300867EAE /* ProgressAnimatable */,
 				574BF1001CC1D86000867EAE /* AppDelegate.swift */,
 				574BF1021CC1D86000867EAE /* ViewController.swift */,
@@ -80,14 +77,6 @@
 			);
 			name = ProgressAnimatable;
 			path = ../../ProgressAnimatable;
-			sourceTree = "<group>";
-		};
-		574BF11A1CC425BA00867EAE /* Swift Timer */ = {
-			isa = PBXGroup;
-			children = (
-				574BF11B1CC425BA00867EAE /* SwiftTimer.swift */,
-			);
-			path = "Swift Timer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +152,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				574BF1131CC2657C00867EAE /* SampleProgressView.swift in Sources */,
-				574BF11C1CC425BA00867EAE /* SwiftTimer.swift in Sources */,
 				574BF1031CC1D86000867EAE /* ViewController.swift in Sources */,
 				574BF1161CC26A3300867EAE /* ProgressAnimatable.swift in Sources */,
 				574BF1011CC1D86000867EAE /* AppDelegate.swift in Sources */,
@@ -237,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -285,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

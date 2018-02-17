@@ -19,7 +19,7 @@ public protocol ProgressAnimatable: class {
 	var reverse: Bool { get set }
 	
 	/// The Timer instance used by the default methods to drive the animation. You can just declare it as an optional with no initial value. The protocol methods control its creation when needed. There is a copy of SwiftTimer bundled with the sample project for convienience, you should grab the most current copy for use in your projects from [SwiftTimer](https://github.com/vichudson1/SwiftTimer).
-	var timer: SwiftTimer? { get set }
+	var timer: Timer? { get set }
 	
 	/// Optional variable can be defined to set the animation duration. You can override as needed, a default of 3 seconds is used if you omit this.
 	var animationDuration: Double { get }
@@ -46,8 +46,8 @@ public extension ProgressAnimatable where Self: UIView  {
 		targetValue = progress
 		checkReverse()
 		if timer == nil {
-			timer = SwiftTimer(timeInterval: timerInterval, userInfo: nil, repeats: true) { [unowned self] timer in
-				self.updateProgress()
+			timer = Timer.scheduledTimer(withTimeInterval: timerInterval, repeats: true) { [weak self] (timer) in
+				self?.updateProgress()
 			}
 			timer?.fire()
 		}

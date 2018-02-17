@@ -10,7 +10,7 @@ Open up the included Xcode project for the sample app to see how to use it.
 
 ## Installation
 
-Simply add the [ProgressAnimatable](https://github.com/vichudson1/ProgressAnimatable/blob/master/ProgressAnimatable/ProgressAnimatable.swift) protocol and a copy of [SwiftTimer](https://github.com/vichudson1/SwiftTimer) to your project.
+Simply add the [ProgressAnimatable](https://github.com/vichudson1/ProgressAnimatable/blob/master/ProgressAnimatable/ProgressAnimatable.swift) protocol to your project.
 
 ## License
 
