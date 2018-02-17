@@ -23,13 +23,12 @@ class ViewController: UIViewController {
 	@IBOutlet var animatedSwitch: UISwitch!
 	@IBOutlet var progressLabel: UILabel!
 	@IBOutlet var progressView: SampleProgressView!
-	@IBAction func stepperChanged(sender: UIStepper) {
-		
+
+	@IBAction func stepperChanged(_ sender: UIStepper) {
 		self.progressView.set(progress: sender.value * 0.01,
-		                      animated: animatedSwitch.on)
+							  animated: animatedSwitch.isOn)
 		
 		self.progressLabel.text = "\(Int(sender.value))%"
 	}
-
 }
 

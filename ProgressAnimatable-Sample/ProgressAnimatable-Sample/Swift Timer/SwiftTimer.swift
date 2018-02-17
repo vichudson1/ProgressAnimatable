@@ -16,12 +16,12 @@ public class SwiftTimer: NSObject {
 	- parameter repeats: Determines whether the repeats or fires a single time.
 	- parameter timerAction: A closure that will be executed each firing of the timer. The closure has a parameter which passes in the instance of the timer executing it.
 	*/
-	init(timeInterval: NSTimeInterval, userInfo: [String: AnyObject]?, repeats: Bool, timerAction: (_: SwiftTimer) -> Void){
+	init(timeInterval: TimeInterval, userInfo: [String: AnyObject]?, repeats: Bool, timerAction: @escaping (_: SwiftTimer) -> Void){
 		super.init()
 		self.timerAction = timerAction
-		self.timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval,
+		self.timer = Timer.scheduledTimer(timeInterval: timeInterval,
 		                                                    target: self,
-		                                                    selector: #selector(self.theSelector(_:)),
+		                                                    selector: #selector(self.theSelector(timer:)),
 		                                                    userInfo: userInfo,
 		                                                    repeats: repeats)
 	}
@@ -45,12 +45,12 @@ public class SwiftTimer: NSObject {
 	/// Check to see if the timer is running or not.
 	var running = false
 	
-	private var timer: NSTimer?
+	private var timer: Timer?
 	private var timerAction: ((_: SwiftTimer) -> Void)?
 }
 
 private extension SwiftTimer {
-	@objc func theSelector(timer: NSTimer) {
+	@objc func theSelector(timer: Timer) {
 		guard let action = self.timerAction else { return }
 		action(self)
 	}

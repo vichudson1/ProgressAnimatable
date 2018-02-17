@@ -29,14 +29,14 @@ public protocol ProgressAnimatable: class {
 	- parameter progress: The new progress value for your view.
 	- parameter animated: Determines whether the progress change should be animated. Defaults to true.
 	*/
-	func set(progress progress: Double, animated: Bool)
+	func set(progress: Double, animated: Bool)
 }
 
 
 /// Extension contains the default method implementation for `set(progress progress: Double, animated: Bool)`.
 public extension ProgressAnimatable where Self: UIView  {
 	
-	func set(progress progress: Double, animated: Bool = true) {
+	func set(progress: Double, animated: Bool = true) {
 		guard animated else {
 			self.progress = progress
 			setNeedsDisplay()

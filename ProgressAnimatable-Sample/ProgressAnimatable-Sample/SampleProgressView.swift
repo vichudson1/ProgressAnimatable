@@ -10,13 +10,13 @@ import UIKit
 @IBDesignable
 class SampleProgressView: UIView {
 	
-    override func drawRect(rect: CGRect) {		
+	override func draw(_ rect: CGRect) {		
 		let progressWidth = progress > 0.01 ? (CGFloat(progress) * (self.bounds.width - 12)) : 8
 		let barRect = CGRect(x: 4, y: 4, width: progressWidth, height: self.bounds.height - 8)
 		let barPath = UIBezierPath(roundedRect: barRect, cornerRadius: 4)
-		UIColor.greenColor().setFill()
+		UIColor.green.setFill()
 		barPath.fill()
-		UIColor.darkGrayColor().setStroke()
+		UIColor.darkGray.setStroke()
 		barPath.lineWidth = 1
 		barPath.stroke()
     }
